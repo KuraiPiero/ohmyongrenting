@@ -1,0 +1,32 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "prueba-ong",
+    "host": "127.0.0.1",
+    "dialect": "mariadb",
+    "dialectOptions": {
+      "timezone": "Etc/GMT0"
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "prueba-ong",
+    "host": "127.0.0.1",
+    "dialect": "mariadb",
+    "dialectOptions": {
+      "timezone": "Etc/GMT0"
+    }
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "prueba-ong",
+    "host": "127.0.0.1",
+    "dialect": "mariadb",
+    "dialectOptions": {
+      "timezone": "Etc/GMT0"
+    }
+  }
+}
