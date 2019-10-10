@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-
+const SignUpController = require("../controllers/SignUpController");
 const mysqlConnection = require("../db");
 
 var sql = `
@@ -152,5 +152,6 @@ router.delete("/db/usuarios/:id", (req, res) => {
     }
   );
 });
+router.post("/db/signup", SignUpController);
 
 module.exports = router;

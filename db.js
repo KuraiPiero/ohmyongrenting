@@ -21,7 +21,6 @@ const sequelize = new Sequelize(
       useUTC: false,
       timezone: "Etc/GMT0"
     },
-    timezone: process.env.db_timezone,
     port: process.env.db_port,
     pool: {
       min: 0,

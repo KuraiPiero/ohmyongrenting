@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-
+const VerificationController = require("../controllers/VerificationController");
 const mysqlConnection = require("../db");
 var sql = `CREATE TABLE verificacionToken (
     id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -89,5 +89,6 @@ router.delete("/db/token/:id", (req, res) => {
     }
   );
 });
+router.post("/db/token/verification", VerificationController);
 
 module.exports = router;
